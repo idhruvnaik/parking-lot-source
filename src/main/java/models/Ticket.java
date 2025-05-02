@@ -8,7 +8,7 @@ public class Ticket extends BaseModel {
 
     private String ticketNo;
     private Gate generatedAt;
-    private Date entryTime;
+    private Long entryTime;
     private Operator generatedBy;
 
     public String getTicketNo() {
@@ -27,11 +27,11 @@ public class Ticket extends BaseModel {
         this.generatedAt = generatedAt;
     }
 
-    public Date getEntryTime() {
+    public Long getEntryTime() {
         return entryTime;
     }
 
-    public void setEntryTime(Date entryTime) {
+    public void setEntryTime(Long entryTime) {
         this.entryTime = entryTime;
     }
 
